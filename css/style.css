@@ -174,3 +174,61 @@ address {
   font-weight: 600;
   src: url('../fonts/poppins-v24-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+
+body {
+  font-family: 'Open Sans';
+  position: relative;
+}
+
+.background {
+  background-image: url("../img/Herobg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 2.7rem;
+}
+
+h1 {
+  font-family: 'Poppins';
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+  color: #00252E;
+  margin-inline: 1.2rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  max-width: 100%;
+  margin-inline: 1.6rem;
+  margin-bottom: 8rem;
+}
+
+.logo {
+  max-width: 10.4rem;
+  max-height: 1.6rem;
+}
+
+header button {
+  all: unset;
+  max-width: 9.6rem;
+  max-height: 2.4rem;
+  background-color: #FFFFFF;
+  color: #00252E;
+  border-radius: 1.2rem;
+  
+}
+
+.hero, .article1, .article2, .article3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero {
+  padding-inline: 3.5rem;
+}
