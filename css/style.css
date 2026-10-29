@@ -64,7 +64,7 @@ select {
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
-   scroll-behavior: auto;
+    scroll-behavior: auto;
   }
   
   *,
@@ -79,7 +79,7 @@ select {
 
 
 html {
-    font-size: 62.5%; /* 1rem = 10px avec une base utilisateur de 16px */
+  font-size: 62.5%; /* 1rem = 10px avec une base utilisateur de 16px */
 }
 
 /* Remove focus for mouse users */
@@ -198,6 +198,7 @@ body a {
 h1 {
   font-family: 'Poppins';
   font-size: 2.4rem;
+  font-weight: 600;
   line-height: 3.6rem;
   color: #00252E;
   margin-inline: 1.2rem;
@@ -222,16 +223,6 @@ header {
   max-height: 1.6rem;
 }
 
-header button {
-  all: unset;
-  max-width: 9.6rem;
-  max-height: 2.4rem;
-  background-color: #FFFFFF;
-  color: #00252E;
-  border-radius: 1.2rem;
-  
-}
-
 .hero, .article1, .article2, .article3 {
   display: flex;
   flex-direction: column;
@@ -245,18 +236,23 @@ header button {
 
 .hero p {
   margin-bottom: 3.2rem;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #00252E;
 }
 
 .link1 {
-  display: flex;
   justify-content: center;
   align-items: center;
   background-color: #FFFFFF;
   border-radius: 1.2rem;
-  width: 9.6rem;
-  height: 2.4rem;
+  max-width: 20rem;
+  max-height: 4.8rem;
   color: #00252E;
   font-size: 1rem;
+  padding-inline: 2.3rem;
+  padding-block: 0.5rem;
+  box-shadow: 0.2rem 0.3rem 0.6rem 0.1rem rgba(255, 82, 193, 16.62%);
 }
 
 .link2 {
@@ -270,11 +266,35 @@ header button {
   color: #FFFFFF;
   font-size: 1.2rem;
   margin-bottom: 5.6rem;
+  font-weight: 700;
+  box-shadow: 0 0.2rem 0.7rem rgba(0, 0, 0, 9.54%);  
+}
+
+.link3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FF52C1;
+  border-radius: 2rem;
+  width: 20rem;
+  height: 4rem;
+  color: #FFFFFF;
+  font-size: 1rem;
+  margin-bottom: 5.6rem;
+  font-weight: 700;
+  box-shadow: 0 0.3rem 0.7rem rgba(0, 37, 46, 22.31%);
 }
 
 .article1, .article2, .article3, .get-started {
   box-shadow: 0 0 1.4rem rgba(0, 0, 0, 7%);
   border-radius: 1.6rem;
+}
+
+.article1, .article2, .article3 {
+  max-width: 123.2rem;  
+  padding-inline: 4.5rem;
+  padding-top: 2.4rem;
+  padding-bottom: 3.3rem;
 }
 
 .articles {
@@ -290,24 +310,28 @@ header button {
   max-width: 50rem;
   font-size: 1.4rem;
   line-height: 2.1rem;
-  margin-bottom: 5.4rem;
+  color: #808E9A;
 
 }
 
 h2 {
+  font-family: 'Poppins';
   margin-top: 2.4rem;
   margin-bottom: 1.6rem;
   font-size: 2rem;
   line-height: 3rem;
   font-weight: 600;
+  color: #00252E;
 }
  
 .get-started h3 {
+  font-family: 'Poppins';
   font-size: 1.8rem;
   font-weight: 600;
   line-height: 3rem;
   padding-top: 4rem;
   padding-bottom: 2.4rem;
+  color: #00252E;
 }
 
 .get-started {
@@ -315,22 +339,31 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-inline: 1.2rem;
+  padding-inline: 1.2rem;
   top: -10.9rem;
   background-color: #FFFFFF;
+  margin-inline: -0.5rem;
 }
 
 footer {
   background-color: #00252E;
   padding-bottom: 4.6rem;
+  padding-inline: 1.7rem;
+  
 }
+
 
 .invert-logo {
   filter: brightness(0) invert(1);
-  margin-bottom: 3.2rem;
+  max-width: 15.2rem;
 }
 
-
+.address {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  margin-bottom: 4.1rem;
+}
 
 footer p, footer a{
   color: #FFFFFF;
@@ -341,6 +374,12 @@ footer p, footer a{
   display: flex;
   flex-direction: column;
   align-items: start;
+  gap: 1.6rem;
+}
+
+footer > *, footer a {
+  font-weight: 400;
+  font-size: 1.4rem;
 }
 
 .network-link {
@@ -353,4 +392,48 @@ footer p, footer a{
   display: flex;
   justify-content: center;
   margin-top: 2.4rem;
+  font-family: 'Poppins';
+  font-size: 1.113rem;
+}
+
+.main-navigation {
+  margin-bottom: 2.4rem;
+}
+
+.address p {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 2.7rem;
+  
+}
+
+.localise::before {
+  content: url(../img/localize.svg);
+  position: relative;
+  display: inline-block;
+  width: 1.8rem;
+  height: 1.8rem;
+  margin-top: 0.5rem;
+  flex-shrink: 0;
+}
+
+.tel::before {
+  content: url(../img/phone.svg);
+  position: relative;
+  display: inline-block;
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+.mail::before {
+  content: url(../img/mail.svg);
+  position: relative;
+  display: inline-block;
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+.address > p:not(:first-of-type) { /* cible tous les enfants p de adress sauf le 1er */
+  align-items: center;
 }
