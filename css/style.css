@@ -178,6 +178,13 @@ address {
 body {
   font-family: 'Open Sans';
   position: relative;
+  text-align: center;
+  color: #00252E;
+}
+
+body a {
+  text-decoration: none;
+  font-weight: 700;
 }
 
 .background {
@@ -194,6 +201,8 @@ h1 {
   line-height: 3.6rem;
   color: #00252E;
   margin-inline: 1.2rem;
+  margin-bottom: 2.4rem;
+  
 }
 
 header {
@@ -230,5 +239,118 @@ header button {
 }
 
 .hero {
-  padding-inline: 3.5rem;
+  margin-inline: 3.5rem;
+  padding-bottom: 3.7rem;
+}
+
+.hero p {
+  margin-bottom: 3.2rem;
+}
+
+.link1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFFFFF;
+  border-radius: 1.2rem;
+  width: 9.6rem;
+  height: 2.4rem;
+  color: #00252E;
+  font-size: 1rem;
+}
+
+.link2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FF52C1;
+  border-radius: 2rem;
+  width: 24rem;
+  height: 4rem;
+  color: #FFFFFF;
+  font-size: 1.2rem;
+  margin-bottom: 5.6rem;
+}
+
+.article1, .article2, .article3, .get-started {
+  box-shadow: 0 0 1.4rem rgba(0, 0, 0, 7%);
+  border-radius: 1.6rem;
+}
+
+.articles {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding-inline: 2rem;
+  margin-top: 6rem;
+  margin-bottom: 22.9rem;
+}
+
+.articles p {
+  max-width: 50rem;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  margin-bottom: 5.4rem;
+
+}
+
+h2 {
+  margin-top: 2.4rem;
+  margin-bottom: 1.6rem;
+  font-size: 2rem;
+  line-height: 3rem;
+  font-weight: 600;
+}
+ 
+.get-started h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 3rem;
+  padding-top: 4rem;
+  padding-bottom: 2.4rem;
+}
+
+.get-started {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-inline: 1.2rem;
+  top: -10.9rem;
+  background-color: #FFFFFF;
+}
+
+footer {
+  background-color: #00252E;
+  padding-bottom: 4.6rem;
+}
+
+.invert-logo {
+  filter: brightness(0) invert(1);
+  margin-bottom: 3.2rem;
+}
+
+
+
+footer p, footer a{
+  color: #FFFFFF;
+  text-align: left;
+}
+
+.website-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.network-link {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.4rem;
 }
