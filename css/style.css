@@ -443,6 +443,7 @@ footer > *, footer a {
 
 @media (min-width: 48em) {
 
+
 .background {
   padding-top: 5rem;
   padding-bottom: 7.2rem;
@@ -603,6 +604,7 @@ footer {
   grid-column: 1 / 2;
   grid-row: 2 / 4;
   margin-bottom: 0;
+  margin-left: 12rem;
 }
 
 .main-navigation {
@@ -624,7 +626,7 @@ footer {
 .nav-ext {
   grid-column: 3 / 4;
   grid-row: 2 / 3;
-  margin-top: 2.75rem;
+  margin-top: 4.75rem;
 }
 
 .copyright {
@@ -633,6 +635,12 @@ footer {
   align-self: end;
 }
 
+.localise {
+  max-width: 38rem;
+}
 
+footer {
+  padding-bottom: 6.4rem;
+}
 
 }
